@@ -10,16 +10,16 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n;
+	int n=98;
 	{
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-		printf("0 positive");
+		printf("n positive");
 	if ((n = 0))
-		printf("0 is zero");
+		printf("n is zero");
 	if (n < 0)
 		printf("0 is negative");
 	}
