@@ -10,7 +10,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n=98;
+	int n <= 98;
 	{
 
 	srand(time(0));
