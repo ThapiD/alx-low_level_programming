@@ -15,6 +15,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	is = Last digit of;
 	/* your code goes there */
 	if (n > 5)
 	{
