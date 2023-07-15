@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
@@ -19,15 +20,15 @@ int main(void)
 	/* your code goes there */
 	if (n > 5)
 	{
-		printf("%s %d and is greater than 5\n", lastDigit, n);
+		printf("%s, %d and is greater than 5\n", lastDigit, n);
 	}
 	else if (n == 0)
 	{
-		printf("%s %d and is 0\n", lastDigit, n);
+		printf("%s, %d and is 0\n", lastDigit, n);
 	}
 	else
 	{
-		printf("%s %d and is less than 6 and not 0\n", lastDigit, n);
+		printf("%s, %d and is less than 6 and not 0\n", lastDigit, n);
 	}
 	return (0);
 }
