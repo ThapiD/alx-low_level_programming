@@ -18,8 +18,11 @@ int main(void)
 	/* your code goes there */
 	if (n > 5)
 	{
-		printf("\n%s %d is %d and id greater than 5", lastDigit, n, n);
-		scanf("%s %d %d", lastDigit, &n, &n);
+		printf("%s %d is", lastDigit, n);
+		scanf("%s %d", lastDigit, n);
+
+		printf("%d and is greater than 5\n", n);
+		scanf("%d", &n);
 	}
 	else if (n == 0)
 	{
