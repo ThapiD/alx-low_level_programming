@@ -6,15 +6,11 @@
  */
 int main(void)
 {
-	int i = 0;
+	int i;
 
-	while (i < 10)
+	for (i = 0, i < 10, i++)
 	{
-		printf("%d\n", i);
-		if (i < 9, i++)
-		{
-			printf(" ");
-		}
+		printf("%d", i);
 	}
 	printf("\n");
 		return (0);
