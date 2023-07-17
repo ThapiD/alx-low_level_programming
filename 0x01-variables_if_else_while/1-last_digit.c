@@ -19,7 +19,7 @@ int main(void)
 	if (n > 5)
 	{
 		printf("%s %d is", lastDigit, n);
-		scanf("%s %d", lastDigit, n);
+		scanf("%s %d", lastDigit, &n);
 
 		printf("%d and is greater than 5\n", n);
 		scanf("%d", &n);
