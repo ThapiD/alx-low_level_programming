@@ -10,7 +10,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	char lastDigit[] = "Last digit of";
+	char lastDigit[] = "Last digit of ... is ...";
 	int n;
 
 	srand(time(0));
@@ -18,17 +18,17 @@ int main(void)
 	/* your code goes there */
 	if (n > 5)
 	{
-		printf("\n Last digit of and is greater than 5");
+		printf("\nLast digit of %d is %d and is greater than 5");
 		scanf("%s %d", lastDigit, &n);
 	}
 	else if (n == 0)
 	{
-		printf("\n Last digit of and is 0");
+		printf("\n Last digit of %d is %d and is 0");
 		scanf("%s %d", lastDigit, &n);
 	}
 	else
 	{
-		printf("\n Last digit of and is less than 6 and not 0");
+		printf("\n Last digit of %d is %d and is less than 6 and not 0");
 		scanf("%s %d", lastDigit, &n);
 	}
 	return (0);
