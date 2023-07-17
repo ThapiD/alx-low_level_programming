@@ -20,21 +20,21 @@ int main(void)
 	{
 		printf("\nLast digit of");
 
-		printf("%d is %d greater than 5", lastDigit, n);
+		printf("%s is %d greater than 5", lastDigit, n);
 		scanf("%s %d", lastDigit, n);
 	}
 	else if (n == 0)
 	{
 		printf("\nLast digit of");
 
-		printf("%d is %d and is 0", lastDigit, n);
+		printf("%s is %d and is 0", lastDigit, n);
 		scanf("%s %d", lastDigit, n);
 	}
 	else
 	{
 		printf("\nLast digit of");
 
-		printf("%d is %d and is less than 6 and not 0", lastDigtit, n);
+		printf("%s is %d and is less than 6 and not 0", lastDigtit, n);
 		scanf("%s %d", lastDigit, n);
 	}
 	return (0);
