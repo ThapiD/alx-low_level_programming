@@ -6,13 +6,8 @@
  */
 int main(void)
 {
-	char singleDigit[25] = "0 1 2 3 4 5 6 7 8 9 11 22 33";
-	int i;
+	int i = "0123456789112233";
 
-	for (i = 0; i < 40; i++)
-	{
-		putchar("singleDigit[i]");
-	}
-	putchar('\n');
+		printf("0123456789112233\n");
 		return (0);
 }
