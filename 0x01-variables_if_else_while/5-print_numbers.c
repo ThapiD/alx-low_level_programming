@@ -11,9 +11,6 @@ int main(void)
 	{
 		printf("%d\n", i);
 		if (i < 9)
-		{
-			printf(",");
-		}
 		i++;
 	}
 	printf("\n");
