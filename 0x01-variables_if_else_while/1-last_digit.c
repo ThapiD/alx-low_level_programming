@@ -18,18 +18,18 @@ int main(void)
 	/* your code goes there */
 	if (n > 5)
 	{
-		printf("\n%s %d is %d and id greater than 5", lastDigit, n);
-		scanf("%s %d %d", lastDigit, &n);
+		printf("\n%s %d is %d and id greater than 5", lastDigit, n, n);
+		scanf("%s %d %d", lastDigit, &n, &n);
 	}
 	else if (n == 0)
 	{
-		printf("\n%s %d is %d and is 0", lastDigit, n);
-		scanf("%s %d %d", lastDigit, &n);
+		printf("\n%s %d is %d and is 0", lastDigit, n, n);
+		scanf("%s %d %d", lastDigit, &n, &n);
 	}
 	else
 	{
-		printf("\n%s %d is %d and is less than 6 and not 0", lastDigit, n);
-		scanf("%s %d %d", lastDigit, &n);
+		printf("\n%s %d is %d and is less than 6 and not 0", lastDigit, n, n);
+		scanf("%s %d %d", lastDigit, &n, &n);
 	}
 	return (0);
 }
