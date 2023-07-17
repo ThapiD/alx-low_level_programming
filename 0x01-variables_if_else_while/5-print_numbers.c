@@ -6,9 +6,10 @@
  */
 int main(void)
 {
-	long long int i = "0123456789112233";
+	int i = "0,1,2,3,4,5,6,7,8,9";
+	while (i < 10, i = 0, i++)
 	{
-		printf("%lld", i);
+		printf("%d\n", i);
 	}
 	printf('\n');
 		return (0);
