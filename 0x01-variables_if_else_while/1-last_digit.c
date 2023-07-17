@@ -10,7 +10,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	char lastDigit = "Last digit of";
+	char lastDigit[] = "Last digit of";
 	int n;
 
 	srand(time(0));
