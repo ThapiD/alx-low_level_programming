@@ -21,7 +21,7 @@ int main(void)
 		printf("\n%s %d is %d and is greater than 5", lastDigit, n, n % 10);
 		scanf("%s %d %d", lastDigit, &n, &n);
 	}
-	else if ((n % 10 < 6) && (n % 10))! == 0
+	else if ((n % 10 < 6) && (n % 10 != 0))
 	{
 		printf("\n%s %d is %d and is less than 6 and not 0", lastDigit, n, n % 10);
 		scanf("%s %d %d", lastDigit, &n, &n);
