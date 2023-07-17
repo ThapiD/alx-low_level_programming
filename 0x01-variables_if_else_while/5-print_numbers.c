@@ -8,6 +8,7 @@ int main(void)
 {
 	int i = "0123456789112233";
 
-		printf("0123456789112233\n");
+		printf("0123456789112233\n", i);
+		scanf("%d", &n);
 		return (0);
 }
