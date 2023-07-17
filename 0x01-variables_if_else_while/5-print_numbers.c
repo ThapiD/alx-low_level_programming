@@ -6,10 +6,9 @@
  */
 int main(void)
 {
-	int i = "0123456789112233";
+	long long int i = "0123456789112233";
 	{
-		printf("0123456789112233", i);
-		scanf("%d", i);
+		printf("%lld", i);
 	}
 	printf('\n');
 		return (0);
