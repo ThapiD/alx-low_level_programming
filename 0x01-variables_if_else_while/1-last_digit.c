@@ -22,17 +22,17 @@ int main(void)
 		scanf("%s %d", lastDigit, &n);
 
 		printf(" %d and is greater than 5\n", n);
-		scanf("%d", &n);
+		scanf("%d", n % 10);
 	}
 	else if (n == 0)
 	{
 		printf("\n%s %d is %d and is 0", lastDigit, n, n);
-		scanf("%s %d %d", lastDigit, &n, &n);
+		scanf("%s %d %d", lastDigit, &n, n % 10);
 	}
 	else ((n % 10) < 6 && (n % 10) ! = 0)
 	{
 		printf("\n%s %d is %d and is less than 6 and not 0", lastDigit, n, n);
-		scanf("%s %d %d", lastDigit, &n, &n);
+		scanf("%s %d %d", lastDigit, &n, n % 10);
 	}
 	return (0);
 }
