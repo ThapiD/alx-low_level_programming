@@ -26,10 +26,10 @@ int main(void)
 		printf("\n%s %d is %d and is less than 6 and not 0", lastDigit, n, n % 10);
 		scanf("%s %d %d", lastDigit, &n, &n % 10);
 	}
-	else ((n % 10) = 0);
+	else ((n % 10) == 0);
 	{
 		printf("\n%s %d is %d and is 0", lastDigit, n, n % 10);
-		scanf("%s %d %d", lastDigit, &n, &n % 10);
+		scanf("%s %d %d", lastDigit, &n, &n);
 	}
 	return (0);
 }
