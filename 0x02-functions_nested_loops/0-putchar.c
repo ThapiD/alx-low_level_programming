@@ -1,11 +1,11 @@
-#ifndef MAIN_H_
-#define MAIN_H_
-
-int main(int x);
-
-#endif MAIN_H_
 #include <stdio.h>
-#include "main.h"
+#include <stddef.h>
+#ifndef MAIN_H
+#define MAIN_H
+
+MAIN_H
+
+#endif
 /**
  * main - Program that prints _putchar
  *
