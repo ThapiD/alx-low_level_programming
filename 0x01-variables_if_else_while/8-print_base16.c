@@ -15,7 +15,7 @@ int main(void)
 		
 	for (i = 0; i < 10; i++)
 	{
-		putchar(alphabet + '0');
+		putchar(alphabet);
 	}
 	}
 	putchar('\n');
