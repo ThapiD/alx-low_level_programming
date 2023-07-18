@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char alphabet = "abcdef";
+	char alphabet[] = "abcdef";
 	int i;
 
 	for (i = 0; i < 10; i++)
