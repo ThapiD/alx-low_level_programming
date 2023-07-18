@@ -15,7 +15,7 @@ int main(void)
 		
 		if (i < 9)
 		{	
-			putchar(alphabet);
+			putchar(alphabet[]);
 		}
 	}
 	putchar('\n');
