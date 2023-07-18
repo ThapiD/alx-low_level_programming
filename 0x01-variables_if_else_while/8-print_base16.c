@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	char n = "abcdef"
+	char n = "abcdef";
 	int i;
 
 	for (i = 0; i <= 9; i++)
 	{
 		putchar((i % 10) + '0');
 
-	for (n = 97; n <= 103; n++)
+	for (n = 'a'; n <= 'f'; n++)
 	{
 		putchar(n);
 	}
