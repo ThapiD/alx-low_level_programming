@@ -8,7 +8,7 @@ void print_alphabet(void);
 
 void print_alphabet(void)
 {
-	printf("print_alphabet\n");
+	printf("print alphabet\n");
 }
 int main(void)
 {
