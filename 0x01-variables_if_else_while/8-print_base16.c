@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char n = "abcdef";
+	char n;
 	int i;
 
 	for (i = 0; i <= 9; i++)
