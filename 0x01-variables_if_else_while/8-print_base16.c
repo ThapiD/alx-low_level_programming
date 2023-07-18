@@ -6,6 +6,7 @@
  */
 int main(void)
 {
+	char n = "abcdef"
 	int i, n;
 
 	for (i = 0; i < 10; i++)
@@ -14,7 +15,7 @@ int main(void)
 
 	for (n = 97; n < 103; --n)
 	{
-		putchar(n - '97');
+		putchar(n);
 	}
 	}
 	putchar('\n');
