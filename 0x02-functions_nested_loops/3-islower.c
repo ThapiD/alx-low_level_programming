@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * test_islower - Checks for lowercase character
+ * _islower - shows 1 if input is a lowercase character
+ * another case shows 0
  *
- * Return: Always 0(success)
- * On error, 1 is returned, and error is se appropriately
+ * Return: Always 1(success) for lowercase character, 0 for otherwise
  */
 int _islower(int c)
 {
