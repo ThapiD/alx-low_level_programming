@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char alphabet[] = "abcdef";
+	char alphabet[6] = "abcdef";
 	int i;
 
 	for (i = 0; i < 10; i++)
@@ -15,7 +15,7 @@ int main(void)
 		
 		if (i < 9)
 		{	
-			putchar(alphabet[]);
+			putchar(alphabet[i]);
 		}
 	}
 	putchar('\n');
