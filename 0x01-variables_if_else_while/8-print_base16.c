@@ -6,16 +6,15 @@
  */
 int main(void)
 {
-	char alphabet[6] = "abcdef";
-	int i;
+	int i, n;
 
 	for (i = 0; i < 10; i++)
 	{
 		putchar(i + '0');
 		
-	for (i = 0; i < 10; i++)
+	for (n = 97; n < 103; n++)
 	{
-		putchar(alphabet);
+		putchar(n + '97');
 	}
 	}
 	putchar('\n');
