@@ -13,10 +13,10 @@ int main(void)
 	{
 		putchar(i);
 		
-		if (i < 9)
-		{
-			putchar(alphabet);
-		}
+	for (i < 0; i < 10; i++)
+	{
+		putchar(alphabet);
+	}
 	}
 	putchar('\n');
 		return (0);
