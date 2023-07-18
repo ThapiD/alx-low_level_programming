@@ -7,13 +7,13 @@
 int main(void)
 {
 	char n = "abcdef"
-	int i, n;
+	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(i + '0');
+		putchar((i % 10) + '0');
 
-	for (n = 97; n < 103; --n)
+	for (n = 97; n <= 103; n++)
 	{
 		putchar(n);
 	}
