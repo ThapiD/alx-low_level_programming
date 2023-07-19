@@ -3,17 +3,20 @@
  * _isalpha - Checks for alphabetic character
  * @c: character to be checked
  *
- * Return: 1 if character is a letter, lowercase or uppercase and 0 if otherwise
+ * Return: 1 for letters and 0 if otherwise
  */
 int _isalpha(int c)
 {
-	if (c >= 97 && c <= 12)
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}	
+	else if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
-	else if (c >= 65 && c <= 90)
+	else
 	{
-		return (1);
+		return (0);
 	}
-	return (0);
 }
