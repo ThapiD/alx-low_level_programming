@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * times_table - prints multiples of nine
- * 
+ *
  * Return: always 0(success)
  */
 void times_table(void)
