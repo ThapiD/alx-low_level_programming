@@ -1,8 +1,9 @@
+#include <unistd.h>
 #include "main.h"
 /** 
- * print_numbers - print numbers 0-9
- * 
- * Return: 0 for success
+ * print_numbers - Print numbers zero to nine
+ * @i: check for number
+ * Return: void
  */
 void print_numbers(void)
 {
@@ -13,5 +14,4 @@ void print_numbers(void)
 		_putchar(i);
 	}
 	_putchar('\n');
-		return (0);
 }
