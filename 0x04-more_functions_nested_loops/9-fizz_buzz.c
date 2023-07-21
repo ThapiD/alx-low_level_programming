@@ -5,11 +5,10 @@
  * for multiples of 3 print Fizz,
  * for the multiples of 5 print Buzz and for multiples of 3 and 5,
  * print FizzBuzz
- * @i: for numbers
  *
  * Return: void
  */
-int main()
+int main(void)
 {
 	int i;
 
