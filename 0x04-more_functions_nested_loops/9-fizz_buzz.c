@@ -6,7 +6,7 @@
  * for the multiples of 5 print Buzz and for multiples of 3 and 5,
  * print FizzBuzz
  *
- * Return: void
+ * Return: Always 0(success)
  */
 int main(void)
 {
