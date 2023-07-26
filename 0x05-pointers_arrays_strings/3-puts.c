@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _puts - prints a string to stdout
@@ -7,9 +8,9 @@
  */
 void _puts(char *str)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-		_putchar(str[i]);
+	for (; *str != '\0'; str++)
+	{
+		_putchar(*str);
+	}
 	_putchar('\n');
 }
