@@ -17,7 +17,6 @@ int is_prime_number(int n)
  * @a: input
  * @i: iterator
  * Return: 0 always(success)
- * 
  */
 int is_prime(int a, int i)
 {
