@@ -12,7 +12,8 @@ char *str_concat(char *s1, char *s2)
 	int number2 = 0;
 	char *string;
 	int a;
-	string = malloc(sizeof(char) * (number1 + number2) +1);
+
+	string = malloc(sizeof(char) * (number1 + number2) + 1);
 	if (s1 == NULL)
 	{
 		return (NULL);
