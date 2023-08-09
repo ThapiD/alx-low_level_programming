@@ -4,8 +4,8 @@
 /**
  * main - Program that prints the 
  * minimun number of coins to make a change
- * @argc:
- * @argv:
+ * @argc: number of command lines
+ * @argv: array of command lines
  * Return:
  */
 int main(int argc, char **argc)
