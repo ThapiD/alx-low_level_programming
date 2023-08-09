@@ -13,7 +13,6 @@ char *str_concat(char *s1, char *s2)
 	char *string;
 	int a;
 
-	string = malloc(sizeof(char) * (number1 + number2) + 1);
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -30,6 +29,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		number2++;
 	}
+
+	string = malloc(sizeof(char) * (number1 + number2) + 1);
 	if (string == NULL)
 	{
 		return (NULL);
@@ -42,6 +43,5 @@ char *str_concat(char *s1, char *s2)
 	{
 		string[number1 + a] = s2[a];
 	}
-	string[a] = '\0';
 	return (string);
 }
