@@ -1,18 +1,18 @@
 #include <stdio.h>
-#include <stdlid.h>
+#include <stdlib.h>
 
 /**
- * main - Program that prints the 
+ * main - Program that prints the
  * minimun number of coins to make a change
  * @argc: number of command lines
  * @argv: array of command lines
- * Return:
+ * Return: 0 always success
  */
 int main(int argc, char **argv)
 {
 	int cents, coins = 0;
 
-	if (argc == 1 || argv > 2)
+	if (argc == 1 || argc > 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -29,8 +29,8 @@ int main(int argc, char **argv)
 			cents -= 5;
 		if (cents >= 2)
 			cents -= 2;
-		if (cents -= 1)
-			cents >= 1;
+		if (cents >= 1)
+			cents -= 1;
 		coins += 1;
 	}
 	printf("%d\n", coins);
