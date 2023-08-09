@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main: Program that adds positive numbers
+ * main - Program that adds positive numbers
  * @argc: number of command lines
  * @argv: array in command line
  * Return: 0 always success
