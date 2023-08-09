@@ -8,7 +8,7 @@
  * @argv: array of command lines
  * Return:
  */
-int main(int argc, char **argc)
+int main(int argc, char **argv)
 {
 	int cents, coins = 0;
 
