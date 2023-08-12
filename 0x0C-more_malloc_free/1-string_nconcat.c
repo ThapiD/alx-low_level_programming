@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * *string_nconcat - Function that concatenates two
@@ -26,7 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p = malloc(sizeof(char) * (space1 + n + 1));
 	}
-	else if
+	else
 	{
 		p = malloc(sizeof(char) * (space1 + space2 + 1));
 	}
