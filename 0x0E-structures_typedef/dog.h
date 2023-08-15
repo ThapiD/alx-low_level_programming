@@ -7,7 +7,6 @@
  * @name: check dog name
  * @age: check for dog age
  * @owner: check for dogs owner
- * @d: pointer
  */
 typedef struct dog
 {
@@ -15,7 +14,9 @@ typedef struct dog
 	float age;
 	char *owner;
 } dog_t;
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+
 
 #endif
