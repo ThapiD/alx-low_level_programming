@@ -1,1 +1,1 @@
-Structures and typedefs
+Structures and typedefs readme
