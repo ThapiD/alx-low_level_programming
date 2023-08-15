@@ -11,5 +11,5 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	a_dog = {d, name, age, owner};
+	dog a_dog = {d, name, age, owner};
 }
