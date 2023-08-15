@@ -7,6 +7,6 @@ struct dog
 	float age;
 	char *owner;
 }
-void main(struct dog *schar *name, float age, char *owner);
+void main(struct dog *s, char *name, float age, char *owner);
 
 #endif;
