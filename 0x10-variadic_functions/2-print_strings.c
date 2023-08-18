@@ -10,7 +10,8 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int a;
-	va_list (line);
+
+	va_list(line);
 	va_start(line, n);
 
 	for (a = 0; a < n; a++)
@@ -22,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		printf("(nil)");
 	}
 	else
-	{	
+	{
 		printf("%s", p);
 	}
 	if (separator != NULL && a < n - 1)
