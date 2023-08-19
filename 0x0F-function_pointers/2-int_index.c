@@ -9,9 +9,9 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int j;
+	int j = 0;
 
-	for (j = 0; j <= size; j++)
+	for (j = 0; j < size; j++)
 		if ((*cmp)(array[j]))
 			return (j);
 	return (-1);
