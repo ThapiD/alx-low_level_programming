@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.f>
+#include <stddef.h>
 
 /**
  * struct op - Struct op
@@ -18,7 +18,7 @@ char *op;
 int (*f)(int a, int b);
 } op_t;
 
-op_add(int a, int b);
+int op_add(int a, int b);
 int op_sub(int a, int b);
 int op_mul(int a, int b);
 int op_div(int a, int b);

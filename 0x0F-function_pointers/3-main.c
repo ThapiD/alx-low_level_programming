@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * main - entry point
@@ -8,18 +8,17 @@
  */
 int main(int argc, char *argv[])
 {
+	int num1 = atoi(argv[1]);
+	char *op = argv[2];
+	int num2 = atoi(argv[3]);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
-	int num1 = atoi(argv[1]);
-	char *op = argv[2];
-	int num2 = atoi[3];
 
-	int (*f)(int, int) = get_op_func(op);
-
-	if (f == NULL)
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		return (99);
@@ -31,9 +30,7 @@ int main(int argc, char *argv[])
 		return (100);
 	}
 
-	int result = f(num1, num2);
-
-	printf("%d\n", result);
+	printf("%d\n", get_op_func(op)(num1, num2));
 
 	return (0);
 }
