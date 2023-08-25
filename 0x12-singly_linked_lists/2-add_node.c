@@ -8,22 +8,28 @@
  */
 list_t *add_note(list_t **head, const char *str)
 {
-	int i = 0;
-       	list_t *newnode = (list_t *)malloc(sizeof(list_t));
+       	list_t *newnode;
+	list_t *charA;
+
+	newnode = malloc(sizeof(list_t));
 
 	if (newnode == NULL)
 	{
 		return (NULL);
 	}
 
-	while (str[i])
+	newnode->str = strdup(str);
+	if (newnode->str == NULL)
 	{
-		i++;
+		free(newnode);
+		return (NULL);
 	}
-	newnode->str = i;
-	newnode->len = len;
-	newnode->next = *head;
 
+	newnode->next = *head;
 	*head = newnode;
-	return newnode;
+	while (charA != NULL)
+	{
+		charA = charA->next;
+	}
+	return (newnode);
 }
