@@ -2,8 +2,7 @@
 #include <unistd.h>
 
 /**
- * print - Function that prints a string
- * @s: string to be printed
+ * before_main - Function that prints a string
  * Return: 0 always success
  */
 int __attribute__((constructor))before_main()
