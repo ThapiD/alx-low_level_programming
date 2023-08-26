@@ -10,6 +10,8 @@ main:
 	push rbp
 	mov rdi, format
 	mov rsi, text
+	mov rax,0
 	call printf
+	pop rbp
 	mov eax, 0
 	ret
