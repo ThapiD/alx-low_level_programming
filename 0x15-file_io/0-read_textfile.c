@@ -9,15 +9,10 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp = fopen("filename", "r");
+	ssize_t fp;
 	char *buffer;
-	ssize_t readbytes = read(fp, buffer, letters);
-	ssize_t writebytes = write(STDOUT_FILENO, buffer, readbytes);
-
-	if (fp == NULL)
-	{
-		return (0);
-	}
+	ssize_t readbytes;
+	ssize_t writebytes;
 
 	if (filename == NULL)
 	{
@@ -29,19 +24,21 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	if (readbytes <= 0)
-	{
-		fclose(fp);
-		free(buffer);
-		return (0);
-	}
 
-	if (writebytes != readbytes)
+	fp = open(filename, O_RDONLY);
+	readbytes =  read(fp, buffer, letters);
+	writebytes = write(STDOUT_FILENO, buffer, readbytes);
+
+	if (fp == -1)
 	{
-		fclose(fp);
+		return (0);
+	}
+	if (readbytes == -1 || writebytes == -1 || writebytes != readbytes)
+	{
 		free(buffer);
 		return (0);
 	}
-	fclose(fp);
-	return (readbytes);
+	free(buffer);
+	close(fp);
+	return (writebytes);
 }
