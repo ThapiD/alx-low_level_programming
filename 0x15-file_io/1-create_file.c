@@ -8,18 +8,15 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fp = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	int fp;
 	int letters = 0;
-	int writebytes = write(fp, text_content, letters);
+	int writebytes;
 
 	if (filename == NULL)
 	{
 		return (-1);
 	}
-	if (fp == -1)
-	{
-		return (-1);
-	}
+
 	if (text_content != NULL)
 	{
 		while (text_content[letters])
@@ -27,9 +24,12 @@ int create_file(const char *filename, char *text_content)
 			letters++;
 		}
 	}
-	if (writebytes == -1)
+
+	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	writebytes = write(fp, text_content, letters);
+
+	if (fp == -1 || writebytes == -1)
 	{
-		close(fp);
 		return (-1);
 	}
 
