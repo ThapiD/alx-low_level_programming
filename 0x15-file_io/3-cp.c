@@ -20,7 +20,8 @@ void error_and_exit(int exits, const char *text)
  */
 int main(int argc, char *argv[])
 {
-	const char *ff = argv[1], *ft = argv[2];
+	const char *ff = argv[1];
+	const char *ft = argv[2];
 	int i, j;
 	ssize_t rb, wb;
 	char buffer[BUFFER_SIZE];
