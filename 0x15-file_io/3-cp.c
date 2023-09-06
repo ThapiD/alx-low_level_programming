@@ -20,7 +20,7 @@ void error_and_exit(int exits, const char *text)
  */
 int main(int argc, char *argv[])
 {
-	const char *ff = argc[1], *ft = argv[2];
+	const char *ff = argv[1], *ft = argv[2];
 	int i, j;
 	ssize_t rb, wb;
 	char buffer[BUFFER_SIZE];
@@ -43,9 +43,11 @@ int main(int argc, char *argv[])
 	{
 		wb = write(j, buffer, rb);
 		if (wb == -1)
+		{
 			close(i);
 			close(j);
 			error_and_exit(99, "Error: Can't write to file");
+		}
 	}
 	if (rb == -1)
 	{
