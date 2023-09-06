@@ -9,8 +9,8 @@
  */
 void error_and_exit(int exits, const char *text)
 {
-        dprintf(STDERR_FILENO, "%s\n", text);
-        exit(exits);
+	dprintf(STDERR_FILENO, "%s\n", text);
+	exit(exits);
 }
 /**
  * main - Program that copies the content of one file to the other
