@@ -2,6 +2,17 @@
 #define BUFFER_SIZE 1024
 
 /**
+ * error_and_exit - Function tht prints a error message and exits the program
+ * @exits: exit code
+ * @text: error text to be printed
+ * Return: void
+ */
+void error_and_exit(int exits, const char *text)
+{
+        dprintf(STDERR_FILENO, "%s\n", text);
+        exit(exits);
+}
+/**
  * main - Program that copies the content of one file to the other
  * @argc: number of arguments
  * @argv: array of arguments
