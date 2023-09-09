@@ -4,12 +4,13 @@
 /**
  * error_and_exit - Function tht prints a error message and exits the program
  * @exits: exit code
- * @text: error text to be printed
+ * @format: error text to be printed
+ * @k: integer
  * Return: void
  */
-void error_and_exit(int exits, const char *text)
+void error_and_exit(int exits, const char *format, int k)
 {
-	dprintf(STDERR_FILENO, "%s\n", text);
+	dprintf(STDERR_FILENO, format, k);
 	exit(exits);
 }
 /**
@@ -28,36 +29,35 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		error_and_exit(97, "Usage: cp file_from file_to");
+		error_and_exit(97, "Usage: %s file_from file_to\n", 0);
 	}
 	i = open(ff, O_RDONLY);
 	if (i == -1)
 	{
-		error_and_exit(98, "Error: Can't read that file");
+		error_and_exit(98, "Error: Can't read that file %s\n", i);
 	}
 	j = open(ft, O_CREAT | O_WRONLY | O_TRUNC, O_APPEND, 0664);
 	if (j == -1)
 	{
-		close(i);
-		error_and_exit(99, "Error: Can't write to file");
+		error_and_exit(99, "Error: Can't write to file %s\n", j);
 	}
 	while ((rb = read(i, buffer, BUFFER_SIZE)) > 0)
 	{
 		wb = write(j, buffer, rb);
 		if (wb == -1)
 		{
-			close(i);
-			close(j);
-			error_and_exit(99, "Error: Can't write to file");
+			error_and_exit(99, "Error: Can't write to file %s\n", j);
 		}
 	}
 	if (rb == -1)
 	{
-		close(i);
-		close(j);
-		error_and_exit(98, "Error: Can't read that file");
+		error_and_exit(98, "Error: Can't read that file %s\n", i);
 	}
-	if (close(i) == -1 || close(j) == -1)
-		error_and_exit(100, "Error: Can't close this description");
+	if (close(i) == -1)
+	{
+		error_and_exit(100, "Error: Can't close this fd %d\n", i);
+	}
+	if (close(j) == -1)
+		error_and_exit(100, "Error: Can't close this fd %d\n", j);
 	return (0);
 }
