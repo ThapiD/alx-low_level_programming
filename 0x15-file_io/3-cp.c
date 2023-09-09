@@ -27,14 +27,15 @@ int main(int argc, char *argv[])
 	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
+	{
 		error_and_exit(97, "Usage: cp file_from file_to");
-
+	}
 	i = open(ff, O_RDONLY);
 	if (i == -1)
 	{
 		error_and_exit(98, "Error: Can't read that file");
 	}
-	j = open(ft, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	j = open(ft, O_CREAT | O_WRONLY | O_TRUNC, O_APPEND, 0664);
 	if (j == -1)
 	{
 		close(i);
