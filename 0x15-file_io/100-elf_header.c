@@ -22,10 +22,10 @@ int index;
 
 for (index = 0; index < 4; index++)
 {
-if (e_ident[index] != 127 &&
-e_ident[index] != 'E' &&
-e_ident[index] != 'L' &&
-e_ident[index] != 'F')
+if (e_ident[EI_MAG0] != 0x7F ||
+e_ident[EI_MAG1] != 'E' ||
+e_ident[EI_MAG2] != 'L' ||
+e_ident[EI_MAG3] != 'F')
 {
 dprintf(STDERR_FILENO, "Permission denied: not elf file\n");
 exit(98);
